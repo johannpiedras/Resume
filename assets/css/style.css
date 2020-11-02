@@ -247,7 +247,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/hero-bg.jpg") top right no-repeat;
+  background: url("../img/Johann_Piedras_Hero_Headshot_1920x1053.jpg") top left no-repeat;
   background-size: cover;
   position: relative;
 }
@@ -260,7 +260,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero:before {
   content: "";
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(0,0,0, 0.4);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -273,7 +273,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 64px;
   font-weight: 700;
   line-height: 56px;
-  color: #45505b;
+  color: white;
 }
 
 #hero p {
@@ -295,7 +295,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero .social-links a {
   font-size: 24px;
   display: inline-block;
-  color: #45505b;
+  color: white;
   line-height: 1;
   margin-right: 20px;
   transition: 0.3s;
@@ -369,6 +369,42 @@ section {
   margin-bottom: 0;
 }
 
+/* Adding H1 for the section */
+
+.section-title h1 {
+  font-size: 42px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #45505b;
+}
+
+.section-title h1::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 1px;
+  background: #ddd;
+  bottom: 1px;
+  left: calc(50% - 60px);
+}
+
+.section-title h1::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #0563bb;
+  bottom: 0;
+  left: calc(50% - 20px);
+}
+
+
+
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
@@ -395,6 +431,18 @@ section {
 
 .about .content p:last-child {
   margin-bottom: 0;
+}
+.about .font-italic{
+  text-align: center;
+}
+
+
+.about .about-411 {
+  text-align: center;
+}
+
+.about .about_h3 {
+  text-align: center;
 }
 
 /*--------------------------------------------------------------
@@ -570,7 +618,7 @@ section {
 }
 
 .portfolio .portfolio-wrap {
-  transition: 0.3s;
+  transition: 0.6s;
   position: relative;
   overflow: hidden;
   z-index: 1;
@@ -599,7 +647,7 @@ section {
   bottom: 0;
   text-align: center;
   z-index: 3;
-  transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.6s;
   display: flex;
   flex-direction: column;
   justify-content: center;
