@@ -610,7 +610,7 @@ section {
 }
 
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
-  color: white;
+  color: blue;
 }
 
 .portfolio #portfolio-flters li:last-child {
